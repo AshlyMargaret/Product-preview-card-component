@@ -130,6 +130,7 @@ button img{
 @media(max-width: 767px){
 
 .grid_container{
+    width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
     grid-template-columns: 1fr;
@@ -146,9 +147,32 @@ button img{
 }
 
 .right_desc{
+    font-size: 1.8rem;
     padding: 20px;
+    gap: 25px;
 }
 button{
     width: 100%;
 }
+}
+
+@media(max-width: 412px){
+
+    body{
+        height: 100vh;
+        overflow: auto;
+    }
+    .grid_container{
+        width: 90%;
+        height: 90%;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    p{
+        line-height: 1.6rem;
+    }
+    h3{
+        font-size: 12px;
+    }
 }
