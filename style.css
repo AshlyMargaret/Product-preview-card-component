@@ -104,9 +104,10 @@ h4{
 }
 
 .dollar_h1{
-    color: var(--Darkcyan);
-    font-family: var(--font-family2);
-    font-weight: 700;
+  font-size: 1.9rem;
+  font-family: var(--font-family2);
+  font-weight: 700;
+  color: var(--dark-cyan);
 }
 
  
