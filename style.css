@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
 :root{
 
     --Darkcyan:hsl(158, 36%, 37%);
@@ -12,7 +16,14 @@
     --Darkgrayishblue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
 
+
+    /* font */
+  --para-font-size: 14px;
+  --font-family1: "Montserrat", sans-serif;
+  --font-family2: "Fraunces", serif;
 }
+
+
 
 body{
     background-color: var(--Cream);
@@ -35,24 +46,37 @@ body{
     grid-template-columns: 1fr 1fr;
     justify-content: center; 
     align-items: center; 
-    background-color: var(--White);
+    background-color: var(--White); 
     gap: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
-.left_container img{
+ .left_container img{
     
     width: 100%;
     border-radius: 25px 0px 0px 25px; 
     object-fit:contain;
    
-}
+   
+} 
+
+
 
 .right_desc{
+  
     display: flex;
     flex-direction: column;
     gap: 20px;
     
 }
+
+h1{
+    font-family: var(--font-family2);
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: var(--Verydarkblue);
+} 
 
 .price_sec{
     display: flex;
@@ -68,6 +92,10 @@ h3{
 
 p{
     color: var(--Darkgrayishblue);
+    font-size: var(--para-font-size);
+  /* line-height: 1.6rem;
+  color: var(--dark-grayish-blue); */
+  font-family: var(--font-family1);
 }
 
 h4{
@@ -77,8 +105,11 @@ h4{
 
 .dollar_h1{
     color: var(--Darkcyan);
+    font-family: var(--font-family2);
+    font-weight: 700;
 }
 
+ 
 button{
     width: 225px;
     background-color: var(--Darkcyan);
@@ -86,6 +117,7 @@ button{
     border-radius: 10px;
     padding: 10px 0;
     border: 1px solid;
+    font-family: var(--font-family1);
 }
 
 button img{
