@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --Darkcyan:hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background-color: var(--Cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+ 
+    
+    
+}
+
+.grid_container{
+   
+    width: 600px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--White);
+    gap: 20px;
+}
+
+.left_container img{
+    
+    width: 100%;
+    border-radius: 25px 0px 0px 25px; 
+    object-fit:contain;
+   
+}
+
+.right_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.price_sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+h3{
+    color: var(--Darkgrayishblue);
+    letter-spacing: 3px;
+}
+
+p{
+    color: var(--Darkgrayishblue);
+}
+
+h4{
+    color: var(--Darkgrayishblue);
+    text-decoration: line-through;
+}
+
+.dollar_h1{
+    color: var(--Darkcyan);
+}
+
+button{
+    width: 225px;
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    border-radius: 10px;
+    padding: 10px 0;
+    border: 1px solid;
+}
+
+button img{
+    margin-right: 10px;
+}
+
+
+/* Media Query */
+
+@media(max-width: 767px){
+
+.grid_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    
+}
+
+.left_container img{
+    
+     width: 100%; 
+    
+    border-radius: 25px 25px 0px 0px; 
+    object-fit:contain;
+   
+}
+
+.right_desc{
+    padding: 20px;
+}
+button{
+    width: 100%;
+}
+}
