@@ -119,6 +119,7 @@ button{
     padding: 10px 0;
     border: 1px solid;
     font-family: var(--font-family1);
+    cursor: pointer;
 }
 
 button img{
